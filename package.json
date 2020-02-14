@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "expensify-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Ayoub Abbou",
@@ -30,6 +30,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-modal": "^3.11.1"
+    "react-modal": "^3.11.1",
+    "react-router-dom": "^5.1.2"
   }
 }
