@@ -9,4 +9,8 @@ const NotFoundPage = () => {
   );
 };
 
+NotFoundPage.propTypes = {
+  //name: PropTypes.string
+};
+
 export default NotFoundPage;

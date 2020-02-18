@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Header = () => {
   return (
@@ -14,10 +15,10 @@ const Header = () => {
         Add Expense
       </NavLink>
 
-      <NavLink to="/edit" activeClassName="is-active">
+      {/*       <NavLink to="/edit" activeClassName="is-active">
         {" "}
         Edit Expense
-      </NavLink>
+      </NavLink> */}
 
       <NavLink to="/help" activeClassName="is-active">
         {" "}
@@ -25,6 +26,10 @@ const Header = () => {
       </NavLink>
     </header>
   );
+};
+
+Header.propTypes = {
+  //name: PropTypes.string
 };
 
 export default Header;

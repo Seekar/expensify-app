@@ -1,7 +1,26 @@
 import React from "react";
+import ExpenseForm from "./ExpenseForm";
+import { connect } from "react-redux";
+import { addExpense } from "../actions/expensesActions";
 
-const AddExpensePage = () => {
-  return <div>This is from my CreatePage</div>;
+const AddExpensePage = props => {
+  return (
+    <div>
+      <h1>Add expense</h1>
+      <ExpenseForm
+        onSubmit={expense => {
+          props.dispatch(addExpense(expense));
+          props.history.push("/");
+        }}
+      />
+    </div>
+  );
 };
 
-export default AddExpensePage;
+// const mapDispatchToProps = { addExpense };
+
+AddExpensePage.propTypes = {
+  //name: PropTypes.string
+};
+
+export default connect()(AddExpensePage);
