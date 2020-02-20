@@ -49,7 +49,6 @@ class ExpenseForm extends React.Component {
     if (!this.state.description || !this.state.amount) {
       const error = "please fill the required inputs (description & amount)";
       this.setState(() => ({ error }));
-      console.log(error);
     } else {
       this.setState(() => ({ error: "" }));
       this.props.onSubmit({
